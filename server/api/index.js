@@ -1,8 +1,10 @@
 import express from 'express';
-import todos from './todos.json';
+import odds from './odds.json';
 
 const router = new express.Router();
 
-router.get('/todos', (req, res) => res.json((todos)));
+router.get('/odds', (req, res) => {
+    res.json(odds)
+});
 
 export default router;

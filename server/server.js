@@ -17,6 +17,11 @@ server.set('views', path.resolve(__dirname, 'views'));
 
 server.use(compression());
 
+
+server.use('/img',express.static(path.join(__dirname, '/../public/img')));
+
+
+
 if (DEBUG) {
   const compiler = webpack(config);
   const webpackHotMiddleware = require('webpack-hot-middleware');
@@ -36,6 +41,8 @@ if (DEBUG) {
 
 server.use('/api', api);
 server.use(reactMiddleware);
+server.use(express.static('public'));
+
 
 server.listen(server.get('port'), () => {
   console.info(`Server running in ${server.get('env')} on port ${server.get('port')}`); // eslint-disable-line no-console

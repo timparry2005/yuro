@@ -1,23 +1,20 @@
 import React, {PropTypes} from 'react';
-import TodoTextInput from '../TodoTextInput';
+
+import style from './header.css';
+
 
 const Header = (props) => {
-  const handleSave = (text) => props.addTodo(text);
 
   return (
-    <header>
-      <h1>todos</h1>
-      <TodoTextInput
-        newTodo
-        placeholder='What needs to be done?'
-        onSave={handleSave}
-      />
+    <header className={style.header}>
+        <img className={style.logo} width='76px' height='21px' src='img/logos/skybet.png'/>
+        <h1>
+            <span className={style.euro}>Euro2016</span>
+            <span className={style.predictor}>Predictor</span>
+            <span className={style.france}>France</span>
+        </h1>
     </header>
   );
-};
-
-Header.propTypes = {
-  addTodo: PropTypes.func.isRequired
 };
 
 export default Header;

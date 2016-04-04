@@ -2,9 +2,10 @@ import {RouterContext, match} from 'react-router';
 import {Provider} from 'react-redux';
 import React from 'react';
 import configureStore from '../../client/store/configureStore';
-import createLocation from 'history/lib/createLocation';
-import {fetchTodos} from '../../client/actions/TodoActions';
+import { createLocation } from 'history';
+import {fetchOdds} from '../../client/actions/OddsActions';
 import {renderToString} from 'react-dom/server';
+import transit from 'transit-immutable-js';
 import routes from '../../client/routes';
 
 export default function reactMiddleware (req, res) {
@@ -18,8 +19,8 @@ export default function reactMiddleware (req, res) {
     const assets = require('../../build/assets.json');
     const store = configureStore();
 
-    return store.dispatch(fetchTodos()).then(() => {
-      const initialState = JSON.stringify(store.getState());
+    return store.dispatch(fetchOdds()).then(() => {
+      const initialState = JSON.stringify(transit.toJSON(store.getState()));
       const content = renderToString(
         <Provider store={store}>
           <RouterContext {...renderProps} />

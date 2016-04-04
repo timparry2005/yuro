@@ -1,0 +1,14 @@
+.root {
+    color: white;
+    text-align: center;
+    color: #184db7;
+    background-color: white;
+    font-weight: bold;
+    line-height: 3em;
+    display: block;
+}
+
+.selected {
+    background-color: #184db7;
+    color: white;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Knockout",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Knockout.js"
+}

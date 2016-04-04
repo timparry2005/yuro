@@ -1,0 +1,6 @@
+{
+  "name": "Stage",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Stage.js"
+}

@@ -1,53 +1,48 @@
-import * as TodoActions from '../../actions/TodoActions';
+import * as OddsActions from '../../actions/OddsActions';
 import React, {Component, PropTypes} from 'react';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import MainSection from '../../components/MainSection';
-import {SHOW_ALL} from '../../constants/TodoFilters';
+import {Map as map} from 'immutable';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import style from './App.css';
 
 export class App extends Component {
-  static propTypes = {
-    actions: PropTypes.object.isRequired,
-    filter: PropTypes.string,
-    route: PropTypes.object.isRequired,
-    todos: PropTypes.array.isRequired
-  }
-
-  constructor (props, context) {
-    super(props, context);
-    this.state = {filter: this.props.route.filter || SHOW_ALL};
-  }
-
-  componentWillReceiveProps (nextProps) {
-    if (nextProps.route.filter !== this.props.filter) {
-      this.setState({filter: nextProps.route.filter});
+    static propTypes = {
+        actions: PropTypes.object.isRequired,
+        route: PropTypes.object.isRequired,
+        odds: PropTypes.object.isRequired
     }
-  }
 
-  render () {
-    const {actions, todos} = this.props;
+    constructor (props, context) {
+        super(props, context);
+    }
 
-    return (
-      <div className={style.root}>
-        <Header addTodo={actions.addTodo} />
-        <MainSection
-          actions={actions}
-          filter={this.state.filter}
-          todos={todos}
-        />
-      </div>
-    );
-  }
+    componentWillReceiveProps (nextProps) {
+    // if (nextProps.route.filter !== this.props.filter) {
+    //   this.setState({filter: nextProps.route.filter});
+    // }
+    }
+
+    render () {
+        const { actions, odds } = this.props;
+        return (
+            <div>
+                <Header/>
+                <MainSection actions={actions} odds={map(odds)}/>
+                <Footer/>
+            </div>
+        );
+    }
 }
 
 const mapStateToProps = (state) => ({
-  todos: state.todos
+    odds: state.odds
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  actions: bindActionCreators(TodoActions, dispatch)
+    actions: bindActionCreators(OddsActions, dispatch)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
