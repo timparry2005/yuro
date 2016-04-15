@@ -1,0 +1,424 @@
+{
+    "A": {
+        "albania" :{
+            "name": "Albania",
+            "flag": "albania",
+            "g1": {
+                "id": "225025616",
+                "lp_num": "16",
+                "lp_den": "1",
+                "selected": false
+            },
+            "g2": {
+                "id": "225025651",
+                "lp_num": "5",
+                "lp_den": "1",
+                "selected": false
+            },
+            "g3": {
+                "id": "225025702",
+                "lp_num": "9",
+                "lp_den": "4",
+                "selected": false
+            },
+            "g4": {
+                "id": "225025784",
+                "lp_num": "8",
+                "lp_den": "11",
+                "selected": false
+            },
+            "qf": {
+                "id": "221223940",
+                "lp_num": "7",
+                "lp_den": "1",
+                "selected": false
+            },
+            "sf": {
+                "id": "221223916",
+                "lp_num": "25",
+                "lp_den": "1",
+                "selected": false
+            },
+            "f": {
+                "id": "221223892",
+                "lp_num": "100",
+                "lp_den": "1",
+                "selected": false
+            },
+            "w": {
+                "id": "128517452",
+                "lp_num": "250",
+                "lp_den": "1",
+                "selected": false
+            }
+        },
+        "france" :{
+            "name": "France",
+            "flag": "france",
+            "g1": {
+                "id": "225025617",
+                "lp_num": "2",
+                "lp_den": "5",
+                "selected": false
+            },
+            "g2": {
+                "id": "225025652",
+                "lp_num": "10",
+                "lp_den": "3",
+                "selected": false
+            },
+            "g3": {
+                "id": "225025703",
+                "lp_num": "9",
+                "lp_den": "1",
+                "selected": false
+            },
+            "g4": {
+                "id": "225025785",
+                "lp_num": "25",
+                "lp_den": "1",
+                "selected": false
+            },
+            "qf": {
+                "id": "221223919",
+                "lp_num": "2",
+                "lp_den": "7",
+                "selected": false
+            },
+            "sf": {
+                "id": "221223895",
+                "lp_num": "8",
+                "lp_den": "11",
+                "selected": false
+            },
+            "f": {
+                "id": "221223871",
+                "lp_num": "7",
+                "lp_den": "4",
+                "selected": false
+            },
+            "w": {
+                "id": "128517406",
+                "lp_num": "10",
+                "lp_den": "3",
+                "selected": false
+            }
+        },
+        "romania": {
+
+            "name": "Romania",
+            "flag": "romania",
+            "g1": {
+                "id": "225025618",
+                "lp_num": "15",
+                "lp_den": "2",
+                "selected": false
+            },
+            "g2": {
+                "id": "225025654",
+                "lp_num": "9",
+                "lp_den": "4",
+                "selected": false
+            },
+            "g3": {
+                "id": "225025704",
+                "lp_num": "13",
+                "lp_den": "8",
+                "selected": false
+            },
+            "g4": {
+                "id": "225025787",
+                "lp_num": "9",
+                "lp_den": "4",
+                "selected": false
+            },
+            "qf": {
+                "id": "221223936",
+                "lp_num": "5",
+                "lp_den": "2",
+                "selected": false
+            },
+            "sf": {
+                "id": "221223912",
+                "lp_num": "8",
+                "lp_den": "1",
+                "selected": false
+            },
+            "f": {
+                "id": "221223888",
+                "lp_num": "25",
+                "lp_den": "1",
+                "selected": false
+            },
+            "w": {
+                "id": "128517437",
+                "lp_num": "80",
+                "lp_den": "1",
+                "selected": false
+            }
+        },
+        "switzerland": {
+            "name": "Switzerland",
+            "flag": "switzerland",
+            "g1": {
+                "id": "225025619",
+                "lp_num": "4",
+                "lp_den": "1",
+                "selected": false
+            },
+            "g2": {
+                "id": "225025655",
+                "lp_num": "3",
+                "lp_den": "2",
+                "selected": false
+            },
+            "g3": {
+                "id": "225025705",
+                "lp_num": "2",
+                "lp_den": "1",
+                "selected": false
+            },
+            "g4": {
+                "id": "225025791",
+                "lp_num": "9",
+                "lp_den": "2",
+                "selected": false
+            },
+            "qf": {
+                "id": "221223927",
+                "lp_num": "11",
+                "lp_den": "8",
+                "selected": false
+            },
+            "sf": {
+                "id": "221223903",
+                "lp_num": "9",
+                "lp_den": "2",
+                "selected": false
+            },
+            "f": {
+                "id": "221223880",
+                "lp_num": "12",
+                "lp_den": "1",
+                "selected": false
+            },
+            "w": {
+                "id": "128517418",
+                "lp_num": "33",
+                "lp_den": "1",
+                "selected": false
+            }
+        }
+    },
+    "B" :{
+        "england": {
+            "name": "England",
+            "flag": "england",
+            "g1": {
+                "id": "225025620",
+                "lp_num": "10",
+                "lp_den": "11",
+                "selected": false
+            },
+            "g2": {
+                "id": "225025656",
+                "lp_num": "5",
+                "lp_den": "2",
+                "selected": false
+            },
+            "g3": {
+                "id": "225025706",
+                "lp_num": "9",
+                "lp_den": "2",
+                "selected": false
+            },
+            "g4": {
+                "id": "225025792",
+                "lp_num": "9",
+                "lp_den": "1",
+                "selected": false
+            },
+            "qf": {
+                "id": "221223923",
+                "lp_num": "8",
+                "lp_den": "11",
+                "selected": false
+            },
+            "sf": {
+                "id": "221223899",
+                "lp_num": "9",
+                "lp_den": "4",
+                "selected": false
+            },
+            "f": {
+                "id": "221223875",
+                "lp_num": "11",
+                "lp_den": "2",
+                "selected": false
+            },
+            "w": {
+                "id": "128517412",
+                "lp_num": "11",
+                "lp_den": "1",
+                "selected": false
+            }
+        },
+        "russia": {
+            "group": "B",
+            "name": "Russia",
+            "flag": "russia",
+            "g1": {
+                "id": "225025621",
+                "lp_num": "11",
+                "lp_den": "4",
+                "selected": false
+            },
+            "g2": {
+                "id": "225025657",
+                "lp_num": "2",
+                "lp_den": "1",
+                "selected": false
+            },
+            "g3": {
+                "id": "225025707",
+                "lp_num": "5",
+                "lp_den": "2",
+                "selected": false
+            },
+            "g4": {
+                "id": "225025793",
+                "lp_num": "7",
+                "lp_den": "2",
+                "selected": false
+            },
+            "qf": {
+                "id": "221223929",
+                "lp_num": "13",
+                "lp_den": "8",
+                "selected": false
+            },
+            "sf": {
+                "id": "221223905",
+                "lp_num": "5",
+                "lp_den": "1",
+                "selected": false
+            },
+            "f": {
+                "id": "221223881",
+                "lp_num": "14",
+                "lp_den": "1",
+                "selected": false
+            },
+            "w": {
+                "id": "128517415",
+                "lp_num": "40",
+                "lp_den": "1",
+                "selected": false
+            }
+        },
+        "slovakia": {
+            "name": "Slovakia",
+            "flag": "slovakia",
+            "g1": {
+                "id": "225025622",
+                "lp_num": "8",
+                "lp_den": "1",
+                "selected": false
+            },
+            "g2": {
+                "id": "225025658",
+                "lp_num": "4",
+                "lp_den": "1",
+                "selected": false
+            },
+            "g3": {
+                "id": "225025708",
+                "lp_num": "9",
+                "lp_den": "4",
+                "selected": false
+            },
+            "g4": {
+                "id": "225025794",
+                "lp_num": "11",
+                "lp_den": "10",
+                "selected": false
+            },
+            "qf": {
+                "id": "221223939",
+                "lp_num": "9",
+                "lp_den": "2",
+                "selected": false
+            },
+            "sf": {
+                "id": "221223915",
+                "lp_num": "16",
+                "lp_den": "1",
+                "selected": false
+            },
+            "f": {
+                "id": "221223891",
+                "lp_num": "50",
+                "lp_den": "1",
+                "selected": false
+            },
+            "w": {
+                "id": "128517444",
+                "lp_num": "150",
+                "lp_den": "1",
+                "selected": false
+            }
+        },
+        "wales": {
+            "name": "Wales",
+            "flag": "wales",
+            "g1": {
+                "id": "225025623",
+                "lp_num": "4",
+                "lp_den": "1",
+                "selected": false
+            },
+            "g2": {
+                "id": "225025659",
+                "lp_num": "5",
+                "lp_den": "2",
+                "selected": false
+            },
+            "g3": {
+                "id": "225025709",
+                "lp_num": "2",
+                "lp_den": "1",
+                "selected": false
+            },
+            "g4": {
+                "id": "225025795",
+                "lp_num": "9",
+                "lp_den": "4",
+                "selected": false
+            },
+            "qf": {
+                "id": "221223935",
+                "lp_num": "9",
+                "lp_den": "4",
+                "selected": false
+            },
+            "sf": {
+                "id": "221223911",
+                "lp_num": "8",
+                "lp_den": "1",
+                "selected": false
+            },
+            "f": {
+                "id": "221223886",
+                "lp_num": "25",
+                "lp_den": "1",
+                "selected": false
+            },
+            "w": {
+                "id": "128517445",
+                "lp_num": "80",
+                "lp_den": "1",
+                "selected": false
+            }
+        }
+    }
+}

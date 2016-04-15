@@ -6,7 +6,6 @@ const Place = (props) => {
     const styles = props.selected ? `${style.root} ${style.selected}` : `${style.root}`;
 
     const handleClick = () => {
-        console.log(props)
           props.actions.addSelected(props.group, props.name, props.place);
     }
     return (

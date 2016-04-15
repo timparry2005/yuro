@@ -4,7 +4,12 @@ import Place from '../Place';
 import store from '../../store/configureStore';
 
 const Table = (props) => {
-  const {actions, teams} = props;
+  const {actions, teams, group} = props;
+// console.log('*********************')
+// console.log('group',group)
+// console.log('********************')
+// console.log('teams',teams)
+// console.log('********************')
 
   return (
         <table className={style.table}>
@@ -20,26 +25,31 @@ const Table = (props) => {
             </colgroup>
             <thead className={style.thead} colSpan='7'>
                 <tr>
-                    <th colSpan='7'>Group {props.group}</th>
+                    <th colSpan='7'>Group {teams}</th>
                 </tr>
             </thead>
             <tbody>
             {
-                Object.keys(teams).map((team, idx) => {
-                    const flag = `img/flags/${teams[team].flag}.png`;
+                Object.keys(group).map((team, idx) => {
+
+                    const flag = `img/flags/${group[team].flag}.png`;
                     const trtype = idx % 2=== 1 ? 'trodd' : 'treven';
                     return <tr key={idx} className={`${style[trtype]}`}>
                         <td key={'1'} className={style.tdflag}><img width='32px' height='24px' src={flag}/></td>
                         <td key={'2'} className={style.teamName}>{team.name}</td>
                         {
 
-
                             [1,2,3,4].map((num)=>{
-                                return <td key={'g'+num}><Place group={props.group} actions={actions} place={num} selected={teams[team]['g'+num].selected} name={teams[team].name}/></td>
+                                let sel = false;
+                                // console.log(group[team]['g'+num])
+                                if (group[team]['g'+num].hasOwnProperty('selected')) {
+                                    sel = group[team]['g'+num].selected;
+                                }
+                                return <td key={'g'+num}><Place group={teams} actions={actions} place={num} selected={sel} name={group[team].name}/></td>
                             })
                         }
 
-                        <td key={'3'} className={style.price}>{teams[team].selectedPrice}</td>
+                        <td key={'3'} className={style.price}>{group[team].selectedPrice}</td>
                     </tr>
                 })
             }
