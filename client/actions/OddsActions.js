@@ -5,14 +5,13 @@ export function fetchOddsSuccess (odds) {
     return { type: types.FETCH_ODDS_SUCCESS, odds };
 }
 
-export function addSelected (group, name, place) {
-    return {type: types.ADD_SELECTED, group, name, place};
+export function addSelected (group, flag, place) {
+    return {type: types.ADD_SELECTED, group, flag, place};
 }
 
-export function clearCompleted () {
-  return {type: types.CLEAR_COMPLETED};
+export function addToBetslip (props) {
+    return {type: types.ADD_TO_BETSLIP, props};
 }
-
 
 export function fetchOdds () {
   const API = process.env.API || 'http://localhost:3000/api';

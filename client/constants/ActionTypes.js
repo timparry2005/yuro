@@ -1,10 +1,4 @@
-export const ADD_TODO = 'ADD_TODO';
-export const CLEAR_COMPLETED = 'CLEAR_COMPLETED';
-export const COMPLETE_ALL = 'COMPLETE_ALL';
-export const COMPLETE_TODO = 'COMPLETE_TODO';
-export const DELETE_TODO = 'DELETE_TODO';
-export const EDIT_TODO = 'EDIT_TODO';
-export const FETCH_TODOS_SUCCESS = 'FETCH_TODOS_SUCCESS';
-
 export const FETCH_ODDS_SUCCESS = 'FETCH_ODDS_SUCCESS';
 export const ADD_SELECTED = 'ADD_SELECTED';
+export const ADD_TO_BETSLIP = 'ADD_TO_BETSLIP';
+export const SEND_TO_BET = 'SEND_TO_BET';

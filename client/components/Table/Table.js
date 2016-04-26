@@ -1,16 +1,11 @@
 import React, {PropTypes} from 'react';
 import style from './Table.css';
 import Place from '../Place';
-import store from '../../store/configureStore';
+import Price from '../Price';
 
 const Table = (props) => {
-  const {actions, teams, group} = props;
-// console.log('*********************')
-// console.log('group',group)
-// console.log('********************')
-// console.log('teams',teams)
-// console.log('********************')
-
+    console.log(props)
+  const {actions, teams, group, betsInSlip} = props;
   return (
         <table className={style.table}>
             <colgroup>
@@ -31,12 +26,12 @@ const Table = (props) => {
             <tbody>
             {
                 Object.keys(group).map((team, idx) => {
-
                     const flag = `img/flags/${group[team].flag}.png`;
                     const trtype = idx % 2=== 1 ? 'trodd' : 'treven';
+                    let selectedPrice = null;
                     return <tr key={idx} className={`${style[trtype]}`}>
                         <td key={'1'} className={style.tdflag}><img width='32px' height='24px' src={flag}/></td>
-                        <td key={'2'} className={style.teamName}>{team.name}</td>
+                        <td key={'2'} className={style.teamName}>{group[team].name}</td>
                         {
 
                             [1,2,3,4].map((num)=>{
@@ -44,12 +39,12 @@ const Table = (props) => {
                                 // console.log(group[team]['g'+num])
                                 if (group[team]['g'+num].hasOwnProperty('selected')) {
                                     sel = group[team]['g'+num].selected;
+                                    selectedPrice = group[team]['g'+num]
                                 }
-                                return <td key={'g'+num}><Place group={teams} actions={actions} place={num} selected={sel} name={group[team].name}/></td>
+                                return <td key={'g'+num}><Place group={teams} actions={actions} place={num} selected={sel} flag={group[team].flag}/></td>
                             })
                         }
-
-                        <td key={'3'} className={style.price}>{group[team].selectedPrice}</td>
+                        <Price betsInSlip={betsInSlip} price={selectedPrice} actions={actions}/>
                     </tr>
                 })
             }

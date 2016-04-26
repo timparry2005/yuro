@@ -1,0 +1,6 @@
+{
+  "name": "AddToBetslip",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AddToBetslip.js"
+}

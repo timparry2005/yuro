@@ -1,7 +1,9 @@
 .table {
     width: 100%;
-    margin: 0 0 14px 0;
+    max-width: 320px;
     border-collapse: collapse;
+    background-color: #f5f5f5;
+    margin: 14px 14px 0px 14px;
 }
 
 .thead{
@@ -48,6 +50,7 @@
     padding-left: 7px;
     font-weight: bold;
     line-height: 1em;
+    font-size: 13px;
 }/* to remove */
 .place {
     color: white;
@@ -62,19 +65,4 @@
 .placeSelected {
     background-color: #184db7;
     color: white;
-}
-
-.price {
-    font-family: sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    color: #d92231;
-    background-image: linear-gradient(to bottom,#fff 0,#ebeff5 100%);
-    cursor: pointer;
-    box-sizing: border-box;;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    text-align: center;
 }
